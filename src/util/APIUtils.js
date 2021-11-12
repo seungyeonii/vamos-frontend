@@ -56,7 +56,6 @@ export function uploadBoard(item) {
     }
 
     return fetch(API_BASE_URL + "/board", {
-        headers: {'Cache-Control': 'no-cache'},
         credentials: 'include',
         method: "POST",
         body: formData,
@@ -74,7 +73,6 @@ export function updateBoard(item, id) {
     }
 
     return fetch(API_BASE_URL + "/board/" + id, {
-        headers: {'Cache-Control': 'no-cache'},
         credentials: 'include',
         method: "PATCH",
         body: formData,

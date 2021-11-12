@@ -9,7 +9,7 @@ const Footer = () => {
 
             <Typography variant="body2" color="textSecondary" align="right">
                 {"CopyRight © "}
-                sjsage522, seungyeon Seo {new Date().getFullYear()}
+                junseok Shin, seungyeon Seo {new Date().getFullYear()}
                 {"."}
             </Typography>
         </Box>

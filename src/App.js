@@ -75,6 +75,8 @@ class App extends React.Component {
                             }}> <BiCurrentLocation style={{marginRight:'1%'}}/>
                                 {this.state.items.length > 0 ?
                                     this.state.items[0].location.address_name : "VAMOS"}
+
+
                             </Typography>
                         </Grid>
                         <div  className="headButton">
