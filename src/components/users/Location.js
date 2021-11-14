@@ -109,21 +109,21 @@ class Location extends React.Component {
                 <Container component="main" maxWidth="xs" style={{marginTop: "8%"}}>
                     <Paper style={{margin: '3% 30% 0 30%', padding: 10}}>
                         <Link href="/">
-                            <Typography variant="body2" color="textPrimary" align="center">
+                            <Typography variant="body2" color="textPrimary" align="center" style={{fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}>
                                메인으로
                             </Typography>
                         </Link>
                     </Paper>
-                    <Typography variant="body1" color="textPrimary" style={{marginTop:45}}>
+                    <Typography variant="h6" color="textPrimary" style={{marginTop:50}}>
                         <BiMessageAltError size={20}/> 위치를 설정해 주세요.
 
                     </Typography>
                    <p/>
-                    <Typography variant="body2" style={{color:"darkgrey"}}>
+                    <Typography variant="body1" style={{color:"darkgrey"}}>
                         <BiCheck size={15} style={{marginLeft:5}}/> 위치를 설정해야만 주변 중고물품을 볼 수 있습니다.
                 </Typography>
                     <p/>
-                    <Typography variant="body2" style={{color:"darkgrey"}}>
+                    <Typography variant="body1" style={{color:"darkgrey"}}>
                         <BiCheck size={15} style={{marginLeft:5}}/> 위치를 설정해야지 판매글을 올릴 수 있습니다.
                     </Typography>
                     <p/>
@@ -152,7 +152,7 @@ class Location extends React.Component {
                             fullWidth
                             variant="contained"
                             type="submit"
-                            style={{backgroundColor:"#CD4841", color:"white"}}
+                            style={{backgroundColor:"#CD4841", color:"white", fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}
                     >
                         주소검색
                     </Button>
@@ -169,7 +169,7 @@ class Location extends React.Component {
                                 fullWidth
                                 variant="contained"
                                 type="submit"
-                                style={{backgroundColor:"#479F8A", color:"white", marginBottom:"10px"}}
+                                style={{backgroundColor:"#479F8A", color:"white", marginBottom:"10px",fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}
                         >
                             위치 설정
                         </Button>}

@@ -42,10 +42,10 @@ class ChatRoomList extends React.Component {
         const currentUser = this.state.currentUser;
         return (
             <>
-            <div style={{padding :'2px',background:'#F6F6F6'}}>
+            <div style={{padding :'90px',background:'#F6F6F6'}}>
                 <GoBackHistory history={this.props.history}/>
                 <div className="chatList">
-                <Paper style={{margin: '3% 5% 2% 15%', padding: 90}}>
+                <Paper style={{margin: '3% 5% 2% 15%', padding: 220}}>
                     {
                         sellerChatRoomInfos.length > 0 ? <Grid container justifyContent="center">
                             <Typography variant="h5" component="h2" gutterBottom color="secondary">

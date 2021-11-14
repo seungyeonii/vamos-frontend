@@ -14,12 +14,12 @@
 }
 
 .content2 {
-    padding-left : 350px;
+    padding-left : 400px;
     font-weight: bold;
 }
 
 .content3{
-    padding-left : 130px;
+    padding-left : 140px;
     font-weight: bold;
 }
 .content4 {
@@ -27,4 +27,7 @@
 }
 .content5 {
     margin-top: 3px;
+}
+.mainFooter_copy{
+    border: 0.1em solid gray;
 }

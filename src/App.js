@@ -6,7 +6,7 @@ import LoadingPage from "./components/etc/LoadingPage";
 import Board from "./components/boards/Board";
 import {NavLink} from "react-router-dom";
 import icon from "./img/icon.png";
-import {BiCurrentLocation,BiPencil,BiMap} from "react-icons/bi";
+import {BiCurrentLocation,BiPencil,BiMap,BiMessageRounded} from "react-icons/bi";
 import FooterMain from "./components/FooterMain";
 
 
@@ -67,21 +67,22 @@ class App extends React.Component {
                 <Toolbar>
                     <Grid justifyContent="space-between" container>
                         <Grid item>
-                            <img width="17%" src={icon} align='left' />
+                            <img width="20%" src={icon} align='left' style={{marginTop:3}} />
                             <Typography variant="body1" style={{
                                 color: "black",
                                 marginTop:'1%',
-                                marginLeft:'300px'
+                                marginLeft:'300px',
+                                fontFamily: 'GongGothicMedium',
+                                fontSize:19
                             }}> <BiCurrentLocation style={{marginRight:'1%'}}/>
                                 {this.state.items.length > 0 ?
-                                    this.state.items[0].location.address_name : "VAMOS"}
-
+                                    this.state.items[0].location.address_name : "위치를 설정해주시기 바랍니다."}
 
                             </Typography>
                         </Grid>
                         <div  className="headButton">
                         <Grid >
-                            <Button >
+                            <Button style={{fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}>
                                 <NavLink to={{
                                     pathname: "/upload",
                                 }}
@@ -93,7 +94,7 @@ class App extends React.Component {
                                     게시글 작성하기 <BiPencil/>
                                 </NavLink>
                             </Button>
-                            <Button>
+                            <Button style={{fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}>
                                 <NavLink to="/location"
                                          style={{
                                              textDecorationLine: 'none',
@@ -103,14 +104,14 @@ class App extends React.Component {
                                     위치 설정하기 <BiMap/>
                                 </NavLink>
                             </Button>
-                            <Button>
+                            <Button style={{fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}>
                                 <NavLink to="/chatList"
                                          style={{
                                              textDecorationLine: 'none',
-                                             color: '#55C2A9'
+                                             color: '#FF4040'
                                          }}
                                 >
-                                    채팅
+                                    채팅 <BiMessageRounded/>
                                 </NavLink>
                             </Button>
                         </Grid>
@@ -120,12 +121,14 @@ class App extends React.Component {
                             <Typography variant="overline" style={{
                                 color: "black",
                                 marginTop:"5px",
-                                marginLeft:"15px"
+                                marginLeft:"15px",
+                                fontFamily: 'IM_Hyemin-Bold', fontSize: 17
                             }}>
                                 안녕하세요 {this.state.currentUser.nickname} 님!
                             </Typography>
                             <Button color="inherit" onClick={logout} style={{
-                                color: "black"
+                                color: "black",
+                                fontFamily: 'IM_Hyemin-Bold', fontSize: 17
                             }}>
                                 / <a style={{marginLeft:'5px'}}></a>로그아웃
                             </Button>

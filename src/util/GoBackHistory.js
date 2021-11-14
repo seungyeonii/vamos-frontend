@@ -21,7 +21,7 @@ class GoBackHistory extends React.Component {
             <Container component="main" maxWidth="xs" style={{marginTop: "8%"}}>
             <Paper style={{margin: '3% 30% 0 30%', padding: 10}}>
                 <Link onClick={this.historyHandler}>
-                    <Typography variant="body2" color="textPrimary" align="center">
+                    <Typography variant="body2" color="textPrimary" align="center" style={{fontFamily: 'IM_Hyemin-Bold', fontSize: 17}}>
                         <BiLeftArrowAlt/> 메인으로 <BiHome/>
                     </Typography>
                 </Link>

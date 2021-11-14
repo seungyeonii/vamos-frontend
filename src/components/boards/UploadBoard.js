@@ -158,11 +158,11 @@ class UploadBoard extends React.Component {
                 <GoBackHistory history={this.props.history}/>
                 <Container style={{marginBottom: "5%"}}>
                 <Paper style={{margin: '3% 30% 0 25%', padding: 50, width:650}}>
-                    <Typography variant="h6" style={{textAlign:'center', marginBottom:'35px'}}>
-                       <BiClipboard style={{marginRight:'1px'}}/> 중고거래 물품 게시글</Typography>
+                    <Typography variant="h6" style={{textAlign:'center', marginBottom:'35px', fontFamily: 'GmarketSansMedium'}}>
+                       <BiClipboard style={{marginRight:'1px',marginTop:'1px'}}/> 중고거래 물품 게시글</Typography>
 
                     <Grid container align="center">
-                        <Grid xs={12} md={12} item style={{paddingRight: 10}}>
+                        <Grid xs={12} md={12} item style={{paddingRight: 10, fontFamily: 'GmarketSansMedium',fontSize:17}}>
                             <TextField placeholder="제목을 입력해주세요"
                                        autoFocus
                                        fullWidth
@@ -213,7 +213,8 @@ class UploadBoard extends React.Component {
                                       onChange={this.onInputContentChange}
                                       style={{
                                           width: '100%',
-                                          height: '500px'
+                                          height: '500px',
+                                          fontFamily:'GmarketSansMedium'
                                       }}
                                       id="textArea"/>
                             <p/>
@@ -226,7 +227,7 @@ class UploadBoard extends React.Component {
                                     value={this.state.item.price}
                                     inputProps={{style: {textAlign: 'center'}}}
                                 />
-                                <Typography variant="h6" color="textSecondary" gutterBottom>
+                                <Typography variant="h6" color="textSecondary" gutterBottom style={{fontFamily: 'GmarketSansMedium'}}>
                                     원
                                 </Typography>
                             </Grid>
@@ -258,7 +259,7 @@ class UploadBoard extends React.Component {
                                     onClick={this.onButtonClick}
                                     variant="contained"
                                     type="submit"
-                                    style={{background:"#479F8A", color:"white", font:"bold"}}
+                                    style={{background:"#479F8A", color:"white", font:"bold",fontFamily: 'GmarketSansMedium',fontSize:15}}
                             >
                                 게시물 올리기
                             </Button>

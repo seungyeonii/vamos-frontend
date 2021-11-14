@@ -102,19 +102,20 @@ class Board extends React.Component {
                                 }
                             </Carousel>
                         </ThemeProvider>
-                        <CardContent>
-                            <Typography variant="subtitle2" color="textSecondary" gutterBottom>
+                        <CardContent >
+                            <Typography variant="subtitle2" color="textSecondary" gutterBottom style={{fontFamily: 'GongGothicMedium'}}>
                                 {board.category_info.category_name[0]}
                             </Typography>
-                            <Typography variant="subtitle2" color="textSecondary" gutterBottom>
+                            <Typography variant="subtitle2" color="textSecondary" gutterBottom style={{color:'#398170'}}>
                                 거래상태: {board.status} <a style={{marginLeft:'10px'}}></a>
                                 채팅: {chatRoomCount} <BiChat/>
                             </Typography>
-                            <Typography variant="h5" component="h2" gutterBottom>
+                            <p style={{marginTop:1}}/>
+                            <Typography variant="h5" component="h2" gutterBottom style={{fontFamily: 'GmarketSansMedium'}}>
                                 {board.title.substring(0,8)}
                                 {board.title.length > 8 ? <span>...</span> : ""}
                             </Typography>
-                            <Typography variant="body2" component="p">
+                            <Typography variant="body2" component="p" >
                                 {board.content.substring(0, 15)}
                                 {board.content.length > 15 ? <span>...</span> : ""}
                             </Typography>
@@ -129,7 +130,7 @@ class Board extends React.Component {
                                     textDecorationLine: 'none',
                                 }}
                             >
-                                <Button variant="contained" disableElevation size="small" color="secondary" >
+                                <Button variant="contained" disableElevation size="small" color="secondary" style={{fontFamily: 'GmarketSansMedium'}}>
                                     상세 보기
                                 </Button>
                             </NavLink>
