@@ -8,7 +8,7 @@
 ## Preview
 ### Login
 <img src="https://user-images.githubusercontent.com/52312643/141767814-8909cf0d-3539-4089-a3bc-f32179e6a216.PNG"
-     width=600px
+     width=800px
      height=500px
      />
 
