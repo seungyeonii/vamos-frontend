@@ -52,7 +52,7 @@
      />
 
 ### Location Setting
-<img src="https://user-images.githubusercontent.com/60972528/139204914-45dac54c-c0ec-45a6-ad9c-a081b230bff9.png"
-     width=400px
-     height=500px
+<img src="https://user-images.githubusercontent.com/52312643/141878967-d01dbcb2-331b-4e63-8cc5-4c6fa38a567f.png"
+     width=600px
+     height=800px
      />
